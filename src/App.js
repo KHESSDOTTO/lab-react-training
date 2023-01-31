@@ -1,23 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { IdCard } from './components/idCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IdCard firstName="Charles" lastName="Oliveira" gender="male" height={180} birth="2003-10-01"
+      picture="https://randomuser.me/api/portraits/men/44.jpg" />
     </div>
   );
 }
