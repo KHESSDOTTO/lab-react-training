@@ -1,0 +1,46 @@
+.creditCard {
+  border: 1px solid black;
+  border-radius: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 1em 0.5em 2em;
+  width: 25vw;
+  box-shadow: 0.5em 0.5em 0.3em rgba(174, 174, 255, 0.7);
+}
+
+.header {
+  margin-top: 0.75em;
+  height: 2em;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main {
+  width: 90%;
+  font-size: 1.75em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  font-size: 0.8em;
+  margin-bottom: 0.75em;
+  padding: 0;
+  width: 90%;
+  text-align: left;
+}
+
+.footerContent {
+  text-align: left;
+  margin: 2px 1.2em;
+  display: inline-block;
+  padding: 0;
+  width: 35%;
+}
