@@ -11,6 +11,7 @@ import { ClickablePicture } from './components/clickablePicture';
 import imgVisa from "./assets/images/visa.png";
 import imgEmptyDice from "./assets/images/dice-empty.png";
 import { Dice } from './components/dice';
+import { Carousel } from './components/carousel';
 
 function App() {
   return (
@@ -61,6 +62,14 @@ function App() {
         imgClicked={imgEmptyDice}
       />
       <Dice/>
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
     </div>
   );
 }
