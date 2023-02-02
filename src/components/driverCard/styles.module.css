@@ -1,0 +1,39 @@
+.article {
+  display:flex;
+  flex-flow: row nowrap;
+  background-color: rgb(50, 80, 175);
+  padding: 1em;
+  width: 60%;
+  margin: 1em auto;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  border-radius: 1em;
+  color: white;
+}
+
+.circularImg {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.infoDiv {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items:flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.infoDiv * {
+  margin: 0;
+}
+
+.stars {
+  font-size: 2em;
+  text-align: center;
+}
+
+
