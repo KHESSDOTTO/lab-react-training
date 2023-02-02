@@ -11,7 +11,7 @@ export function Carousel (props) {
     } else {
       setImgSel(props.images[cI - 1]);
     };
-  }
+  };
   function moveRight () {
     const cI = props.images.indexOf(imgSel)
     if (cI === props.images.length - 1) {

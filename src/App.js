@@ -12,6 +12,7 @@ import imgVisa from "./assets/images/visa.png";
 import imgEmptyDice from "./assets/images/dice-empty.png";
 import { Dice } from './components/dice';
 import { Carousel } from './components/carousel';
+import { NumbersTable } from './components/numbersTable';
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
+      <NumbersTable limit={12} />
     </div>
   );
 }
