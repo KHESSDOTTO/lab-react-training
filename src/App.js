@@ -10,6 +10,7 @@ import { LikeButton } from './components/likeButton';
 import { ClickablePicture } from './components/clickablePicture';
 import imgVisa from "./assets/images/visa.png";
 import imgEmptyDice from "./assets/images/dice-empty.png";
+import { Dice } from './components/dice';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
         img={imgVisa}
         imgClicked={imgEmptyDice}
       />
+      <Dice/>
     </div>
   );
 }
