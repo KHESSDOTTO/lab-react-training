@@ -1,18 +1,19 @@
 import styles from "./styles.module.css";
+import imgVisa from "../../assets/images/visa.png";
 
 export function CreditCard (props) {
   let logoPath;
   if (props.type.toLowerCase() === "visa") {
-    logoPath = "../../assets/images/visa.png";
+    logoPath = imgVisa;
   } else if (props.type.toLowerCase() === "master card") {
-    logoPath = "../../assets/images/master-card.svg";
+    logoPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png";
   };
   let cardNumber = "**** **** **** "
   if(props.number) {
     for (let i = 4; i > 0; i--) {cardNumber += props.number[props.number.length - i]};
   };
 
-  const header = <header className={styles.header}><img src={logoPath} alt={props.type} /></header>
+  const header = <header className={styles.header}><img src={logoPath} alt={props.type} className={styles.logoType} /></header>
   const main = <main className={styles.main}>{cardNumber}</main>
   const footer =  <footer className={styles.footer}>
     <p className={styles.footerContent}>Expires {props.expirationMonth}/{String(props.expirationYear)[2] + String(props.expirationYear)[3]}</p>

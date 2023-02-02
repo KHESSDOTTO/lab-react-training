@@ -20,6 +20,11 @@
   justify-content: flex-end;
 }
 
+.logoType {
+  width: 3em;
+  height: 1.5em;
+}
+
 .main {
   width: 90%;
   font-size: 1.75em;

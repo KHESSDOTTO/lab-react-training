@@ -7,6 +7,9 @@ import { CreditCard } from './components/creditCard';
 import { Rating } from './components/rating';
 import { DriverCard } from './components/driverCard';
 import { LikeButton } from './components/likeButton';
+import { ClickablePicture } from './components/clickablePicture';
+import imgVisa from "./assets/images/visa.png";
+import imgEmptyDice from "./assets/images/dice-empty.png";
 
 function App() {
   return (
@@ -52,6 +55,10 @@ function App() {
         }}
       />
       <LikeButton />
+      <ClickablePicture
+        img={imgVisa}
+        imgClicked={imgEmptyDice}
+      />
     </div>
   );
 }
