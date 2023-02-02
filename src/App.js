@@ -13,6 +13,7 @@ import imgEmptyDice from "./assets/images/dice-empty.png";
 import { Dice } from './components/dice';
 import { Carousel } from './components/carousel';
 import { NumbersTable } from './components/numbersTable';
+import { FaceBook } from './components/facebook';
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
         ]}
       />
       <NumbersTable limit={12} />
+      <FaceBook />
     </div>
   );
 }
